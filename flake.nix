@@ -15,6 +15,7 @@
         sbt = pkgs.sbt.override {
           jre = jdk;
         };
+        websocat = pkgs.websocat;
       in 
       {
         devShells.default = pkgs.mkShell {
@@ -23,6 +24,7 @@
           packages = [
             jdk
             sbt
+            websocat
           ];
         };
       }

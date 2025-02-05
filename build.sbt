@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "3.3.1"
+ThisBuild / scalaVersion := "3.3.5"
 ThisBuild / organization := "com.lvitaly.fm"
 
 lazy val rootProject = (project in file(".")).settings(
@@ -12,17 +12,17 @@ lazy val rootProject = (project in file(".")).settings(
 lazy val catsKit = Seq(
   "org.typelevel" %% "cats-core",
   "org.typelevel" %% "cats-free"
-).map(_ % "2.10.0")
+).map(_ % "2.13.0")
 
 lazy val catsEffectKit = Seq(
   "org.typelevel" %% "cats-effect"
-).map(_ % "3.5.3")
+).map(_ % "3.5.7")
 
 lazy val http4sKit = Seq(
   "org.http4s" %% "http4s-dsl",
   "org.http4s" %% "http4s-ember-server"
-).map(_ % "0.23.25")
+).map(_ % "0.23.30")
 
 lazy val commonKit = Seq(
-  "ch.qos.logback" % "logback-classic" % "1.4.14"
+  "ch.qos.logback" % "logback-classic" % "1.5.16"
 )
